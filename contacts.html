@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Anfahrt | Back Records Hamburg</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-500 selection:text-zinc-950">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="text-2xl font-black tracking-wider uppercase text-amber-500 flex items-center gap-2">
+                        <svg class="w-8 h-8 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
+                        Back Records
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-zinc-300 hover:text-amber-500 transition">Startseite</a>
+                    <a href="about.html" class="text-zinc-300 hover:text-amber-500 transition">Über uns</a>
+                    <a href="services.html" class="text-zinc-300 hover:text-amber-500 transition">Sortiment</a>
+                    <a href="gallery.html" class="text-zinc-300 hover:text-amber-500 transition">Galerie</a>
+                    <a href="booking.html" class="text-zinc-300 hover:text-amber-500 transition">Beratung buchen</a>
+                    <a href="contacts.html" class="text-amber-500 font-medium transition">Kontakt</a>
+                </div>
+                <div>
+                    <a href="booking.html" class="bg-amber-500 text-zinc-950 font-bold px-5 py-2.5 rounded-full hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">Termin buchen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-20 px-4 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight mb-6">Kontakt & <span class="text-amber-500">Anfahrt</span></h1>
+        <p class="text-xl text-zinc-400">Besuche uns in St. Pauli oder nimm direkt Kontakt mit uns auf.</p>
+    </header>
+
+    <!-- Contact Info & Map Section -->
+    <section class="py-12 px-4 max-w-7xl mx-auto mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Info details -->
+            <div class="space-y-8">
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl space-y-6">
+                    <h2 class="text-2xl font-bold uppercase text-amber-500">Back Records Hamburg</h2>
+                    
+                    <div class="flex items-start gap-4">
+                        <span class="text-2xl">📍</span>
+                        <div>
+                            <h3 class="font-bold">Adresse</h3>
+                            <p class="text-zinc-400">Wohlwillstraße 24<br>20359 Hamburg, Germany</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="text-2xl">📞</span>
+                        <div>
+                            <h3 class="font-bold">Telefon</h3>
+                            <p class="text-zinc-400">+49 40 33356855</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="text-2xl">✉️</span>
+                        <div>
+                            <h3 class="font-bold">E-Mail</h3>
+                            <p class="text-zinc-400">back_records@web.de</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="text-2xl">🕒</span>
+                        <div>
+                            <h3 class="font-bold">Öffnungszeiten</h3>
+                            <p class="text-zinc-400">
+                                Dienstag – Freitag: 12:00 – 19:00 Uhr<br>
+                                Samstag: 12:00 – 16:00 Uhr<br>
+                                Sonntag & Montag: Geschlossen
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps Iframe -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden h-[450px] lg:h-auto">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.24584628283!2d9.9575!3d53.5535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f28f86f8c7b%3A0x6b29f9e782e3e50!2sWohlwillstra%C3%dfe%2024%2C%2020359%20Hamburg%2C%20Germany!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 border-t border-zinc-800 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold uppercase text-amber-500 mb-4">Back Records</h3>
+                <p class="text-zinc-400 text-sm">Wohlwillstraße 24<br>20359 Hamburg, Germany</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold uppercase text-amber-500 mb-4">Öffnungszeiten</h3>
+                <p class="text-zinc-400 text-sm">
+                    Dienstag – Freitag: 12:00 – 19:00 Uhr<br>
+                    Samstag: 12:00 – 16:00 Uhr
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold uppercase text-amber-500 mb-4">Social Media</h3>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/backrecords" target="_blank" class="text-zinc-400 hover:text-amber-500 transition">Instagram</a>
+                    <a href="https://facebook.com/backrecords" target="_blank" class="text-zinc-400 hover:text-amber-500 transition">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-zinc-900 text-center text-zinc-600 text-sm">
+            &copy; 2026 Back Records Hamburg. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+</body>
+</html>
