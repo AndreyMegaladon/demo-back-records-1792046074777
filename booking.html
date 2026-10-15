@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termin buchen | Back Records Hamburg</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-500 selection:text-zinc-950">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="text-2xl font-black tracking-wider uppercase text-amber-500 flex items-center gap-2">
+                        <svg class="w-8 h-8 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
+                        Back Records
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-zinc-300 hover:text-amber-500 transition">Startseite</a>
+                    <a href="about.html" class="text-zinc-300 hover:text-amber-500 transition">Über uns</a>
+                    <a href="services.html" class="text-zinc-300 hover:text-amber-500 transition">Sortiment</a>
+                    <a href="gallery.html" class="text-zinc-300 hover:text-amber-500 transition">Galerie</a>
+                    <a href="booking.html" class="text-amber-500 font-medium transition">Beratung buchen</a>
+                    <a href="contacts.html" class="text-zinc-300 hover:text-amber-500 transition">Kontakt</a>
+                </div>
+                <div>
+                    <a href="booking.html" class="bg-amber-500 text-zinc-950 font-bold px-5 py-2.5 rounded-full hover:bg-amber-400 transition shadow-lg shadow-amber-500/20">Termin buchen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-16 px-4 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight mb-4">Termin <span class="text-amber-500">reservieren</span></h1>
+        <p class="text-xl text-zinc-400">Buche einen exklusiven Beratungstermin oder kündige deinen Plattenankauf bei uns an.</p>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="py-8 px-4 max-w-3xl mx-auto mb-20">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 sm:p-12 shadow-2xl">
+            <form action="https://formsubmit.co/back_records@web.de" method="POST" class="space-y-6">
+                
+                <!-- Formsubmit configuration -->
+                <input type="hidden" name="_subject" value="Neue Terminanfrage / Buchung - Back Records">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-zinc-300 mb-2">Vollständiger Name *</label>
+                        <input type="text" name="Name" required class="w-full bg-zinc-955 border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-zinc-300 mb-2">Telefonnummer *</label>
+                        <input type="tel" name="Telefon" required class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-zinc-300 mb-2">E-Mail-Adresse *</label>
+                        <input type="email" name="Email" required class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-zinc-300 mb-2">Gewünschtes Datum *</label>
+                        <input type="date" name="Datum" required class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-zinc-300 mb-2">Uhrzeit *</label>
+                        <input type="time" name="Uhrzeit" required class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-zinc-300 mb-2">Anzahl Personen *</label>
+                        <input type="number" name="Gäste" min="1" max="10" value="1" required class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-zinc-300 mb-2">Anliegen / Service *</label>
+                    <select name="Service" required class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950">
+                        <option value="Privates Digging / Beratung">Privates Digging / Beratung</option>
+                        <option value="Schallplatten Ankauf / Sammlung schätzen">Schallplatten Ankauf / Sammlung schätzen</option>
+                        <option value="Allgemeiner Ladenbesuch">Allgemeiner Ladenbesuch</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-zinc-300 mb-2">Kommentar / Musikwünsche</label>
+                    <textarea name="Kommentar" rows="4" class="w-full border border-zinc-700 rounded-xl px-4 py-3 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-zinc-950" placeholder="Z.B. Suche bestimmte Rock/Metal Pressungen..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-zinc-950 font-black py-4 rounded-xl hover:from-amber-400 hover:to-amber-500 transition shadow-xl shadow-amber-500/20 text-lg uppercase tracking-wider">
+                    Verbindlich anfragen
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 border-t border-zinc-800 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold uppercase text-amber-500 mb-4">Back Records</h3>
+                <p class="text-zinc-400 text-sm">Wohlwillstraße 24<br>20359 Hamburg, Germany</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold uppercase text-amber-500 mb-4">Öffnungszeiten</h3>
+                <p class="text-zinc-400 text-sm">
+                    Dienstag – Freitag: 12:00 – 19:00 Uhr<br>
+                    Samstag: 12:00 – 16:00 Uhr
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold uppercase text-amber-500 mb-4">Social Media</h3>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/backrecords" target="_blank" class="text-zinc-400 hover:text-amber-500 transition">Instagram</a>
+                    <a href="https://facebook.com/backrecords" target="_blank" class="text-zinc-400 hover:text-amber-500 transition">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-zinc-900 text-center text-zinc-600 text-sm">
+            &copy; 2026 Back Records Hamburg. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+</body>
+</html>
